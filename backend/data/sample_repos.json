@@ -1,0 +1,205 @@
+{
+    "repositories": [
+        {
+            "repository_name": "gozleredtech/backend",
+            "commits": [
+                {
+                    "hash": "abc123",
+                    "message": "Fixed critical login bug in authController",
+                    "diff": "- const user = null\n+ const user = await User.findById(id)\n- if (password == hash)\n+ if (bcrypt.compare(password, hash))\n+ // Added proper error handling\n+ try {\n+   const result = await authenticate()\n+ } catch(err) {\n+   logger.error(err)\n+ }",
+                    "files_changed": [
+                        "authController.js",
+                        "userModel.js"
+                    ]
+                },
+                {
+                    "hash": "def456",
+                    "message": "Refactored DB connection logic",
+                    "diff": "- mongoose.connect(url)\n+ mongoose.connect(url, {\n+   useNewUrlParser: true,\n+   useUnifiedTopology: true\n+ })",
+                    "files_changed": [
+                        "db.js"
+                    ]
+                },
+                {
+                    "hash": "ghi789",
+                    "message": "Fixed memory leak in session handler",
+                    "diff": "- sessions.push(newSession)\n+ sessions.set(sessionId, newSession)\n+ // Clear old sessions\n+ setInterval(() => {\n+   clearExpiredSessions()\n+ }, 3600000)",
+                    "files_changed": [
+                        "sessionHandler.js"
+                    ]
+                },
+                {
+                    "hash": "jkl012",
+                    "message": "Added new user profile feature",
+                    "diff": "+ const getProfile = async (userId) => {\n+   return await User.findById(userId).select('name email avatar')\n+ }\n+ module.exports = { getProfile }",
+                    "files_changed": [
+                        "userModel.js",
+                        "profileController.js"
+                    ]
+                },
+                {
+                    "hash": "mno345",
+                    "message": "Hotfix: resolve authentication crash on invalid token",
+                    "diff": "- const decoded = jwt.verify(token, secret)\n+ let decoded\n+ try {\n+   decoded = jwt.verify(token, secret)\n+ } catch(err) {\n+   return res.status(401).json({ error: 'Invalid token' })\n+ }",
+                    "files_changed": [
+                        "authController.js",
+                        "middleware/auth.js"
+                    ]
+                },
+                {
+                    "hash": "pqr678",
+                    "message": "Updated documentation for API endpoints",
+                    "diff": "+ /**\n+  * @route GET /api/users/:id\n+  * @desc Get user by ID\n+  * @access Public\n+  */",
+                    "files_changed": [
+                        "routes/users.js"
+                    ]
+                },
+                {
+                    "hash": "stu901",
+                    "message": "Fixed SQL injection vulnerability in search",
+                    "diff": "- const query = `SELECT * FROM users WHERE name = '${searchTerm}'`\n+ const query = 'SELECT * FROM users WHERE name = ?'\n+ db.query(query, [searchTerm])",
+                    "files_changed": [
+                        "searchController.js",
+                        "db.js"
+                    ]
+                },
+                {
+                    "hash": "vwx234",
+                    "message": "Improved error handling in payment module",
+                    "diff": "+ try {\n+   const payment = await processPayment(data)\n+   return payment\n+ } catch(err) {\n+   logger.error('Payment failed:', err)\n+   throw new PaymentError(err.message)\n+ }",
+                    "files_changed": [
+                        "paymentController.js"
+                    ]
+                },
+                {
+                    "hash": "yza567",
+                    "message": "Added unit tests for user service",
+                    "diff": "+ describe('UserService', () => {\n+   it('should create user', async () => {\n+     const user = await UserService.create(mockData)\n+     expect(user).toBeDefined()\n+   })\n+ })",
+                    "files_changed": [
+                        "tests/userService.test.js"
+                    ]
+                },
+                {
+                    "hash": "bcd890",
+                    "message": "Patch: fixed race condition in cache update",
+                    "diff": "- cache.set(key, value)\n- await db.save(value)\n+ await db.save(value)\n+ cache.set(key, value)\n+ // Ensure DB write completes first",
+                    "files_changed": [
+                        "cacheManager.js",
+                        "db.js"
+                    ]
+                }
+            ],
+            "issues": [
+                {
+                    "commit_hash": "abc123",
+                    "type": "bug"
+                },
+                {
+                    "commit_hash": "def456",
+                    "type": "feature"
+                },
+                {
+                    "commit_hash": "ghi789",
+                    "type": "bug"
+                },
+                {
+                    "commit_hash": "jkl012",
+                    "type": "feature"
+                },
+                {
+                    "commit_hash": "mno345",
+                    "type": "bug"
+                },
+                {
+                    "commit_hash": "pqr678",
+                    "type": "documentation"
+                },
+                {
+                    "commit_hash": "stu901",
+                    "type": "bug"
+                },
+                {
+                    "commit_hash": "vwx234",
+                    "type": "enhancement"
+                },
+                {
+                    "commit_hash": "yza567",
+                    "type": "test"
+                },
+                {
+                    "commit_hash": "bcd890",
+                    "type": "bug"
+                }
+            ]
+        },
+        {
+            "repository_name": "example/frontend",
+            "commits": [
+                {
+                    "hash": "aaa111",
+                    "message": "Fixed rendering issue in dashboard component",
+                    "diff": "- useEffect(() => { fetchData() })\n+ useEffect(() => { fetchData() }, [])\n+ // Added dependency array to prevent infinite loop",
+                    "files_changed": [
+                        "Dashboard.jsx"
+                    ]
+                },
+                {
+                    "hash": "bbb222",
+                    "message": "Added dark mode toggle",
+                    "diff": "+ const [darkMode, setDarkMode] = useState(false)\n+ const toggleDarkMode = () => setDarkMode(!darkMode)",
+                    "files_changed": [
+                        "App.jsx",
+                        "theme.js"
+                    ]
+                },
+                {
+                    "hash": "ccc333",
+                    "message": "Bug fix: prevent form submission on enter key",
+                    "diff": "- <form onSubmit={handleSubmit}>\n+ <form onSubmit={handleSubmit} onKeyDown={(e) => {\n+   if (e.key === 'Enter') e.preventDefault()\n+ }}>",
+                    "files_changed": [
+                        "LoginForm.jsx"
+                    ]
+                },
+                {
+                    "hash": "ddd444",
+                    "message": "Refactored API service layer",
+                    "diff": "+ class ApiService {\n+   constructor(baseURL) {\n+     this.baseURL = baseURL\n+   }\n+ }",
+                    "files_changed": [
+                        "services/api.js"
+                    ]
+                },
+                {
+                    "hash": "eee555",
+                    "message": "Error: fixed memory leak in event listeners",
+                    "diff": "+ useEffect(() => {\n+   window.addEventListener('resize', handleResize)\n+   return () => window.removeEventListener('resize', handleResize)\n+ }, [])",
+                    "files_changed": [
+                        "Dashboard.jsx",
+                        "Layout.jsx"
+                    ]
+                }
+            ],
+            "issues": [
+                {
+                    "commit_hash": "aaa111",
+                    "type": "bug"
+                },
+                {
+                    "commit_hash": "bbb222",
+                    "type": "feature"
+                },
+                {
+                    "commit_hash": "ccc333",
+                    "type": "bug"
+                },
+                {
+                    "commit_hash": "ddd444",
+                    "type": "refactor"
+                },
+                {
+                    "commit_hash": "eee555",
+                    "type": "bug"
+                }
+            ]
+        }
+    ]
+}

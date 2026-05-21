@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAuth Flow Test Helper</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #0d1117;
+            color: #c9d1d9;
+        }
+
+        .container {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #58a6ff;
+            margin-top: 0;
+        }
+
+        button {
+            background: #238636;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 5px;
+            transition: background 0.2s;
+        }
+
+        button:hover {
+            background: #2ea043;
+        }
+
+        button.danger {
+            background: #da3633;
+        }
+
+        button.danger:hover {
+            background: #f85149;
+        }
+
+        button.secondary {
+            background: #21262d;
+            border: 1px solid #30363d;
+        }
+
+        button.secondary:hover {
+            background: #30363d;
+        }
+
+        .status {
+            background: #21262d;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .status h3 {
+            margin-top: 0;
+            color: #58a6ff;
+        }
+
+        pre {
+            background: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 15px;
+            overflow-x: auto;
+        }
+
+        .success {
+            color: #3fb950;
+        }
+
+        .error {
+            color: #f85149;
+        }
+
+        .warning {
+            color: #d29922;
+        }
+
+        .step {
+            background: #21262d;
+            border-left: 3px solid #58a6ff;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        .step h4 {
+            margin-top: 0;
+            color: #58a6ff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🔐 OAuth Flow Test Helper</h1>
+        <p>Use this tool to test and debug the GitHub OAuth authentication flow.</p>
+
+        <div class="status">
+            <h3>Current Authentication Status</h3>
+            <div id="authStatus">Checking...</div>
+        </div>
+
+        <div class="step">
+            <h4>Step 1: Clear Storage</h4>
+            <p>Clear all authentication data to start fresh.</p>
+            <button onclick="clearStorage()">Clear All Storage</button>
+        </div>
+
+        <div class="step">
+            <h4>Step 2: Check Auth State</h4>
+            <p>View current authentication state from localStorage.</p>
+            <button class="secondary" onclick="checkAuthState()">Check Auth State</button>
+            <pre id="authStateOutput"></pre>
+        </div>
+
+        <div class="step">
+            <h4>Step 3: Test OAuth Flow</h4>
+            <p>Open the app and test the login flow.</p>
+            <button onclick="openApp()">Open App (localhost:3000)</button>
+        </div>
+
+        <div class="step">
+            <h4>Step 4: Verify Redirect</h4>
+            <p>After OAuth login, verify you're on the dashboard.</p>
+            <button class="secondary" onclick="checkCurrentView()">Check Current View</button>
+        </div>
+
+        <div class="step">
+            <h4>Troubleshooting</h4>
+            <button class="danger" onclick="forceLogout()">Force Logout</button>
+            <button class="secondary" onclick="viewConsoleErrors()">View Console Errors</button>
+        </div>
+    </div>
+
+    <script>
+        function updateAuthStatus() {
+            const authData = localStorage.getItem('auth-storage');
+            const statusDiv = document.getElementById('authStatus');
+
+            if (authData) {
+                try {
+                    const parsed = JSON.parse(authData);
+                    const isAuth = parsed.state?.isAuthenticated;
+
+                    if (isAuth) {
+                        statusDiv.innerHTML = `
+                            <span class="success">✅ Authenticated</span><br>
+                            User: ${parsed.state?.user?.login || 'Unknown'}<br>
+                            ID: ${parsed.state?.user?.id || 'Unknown'}
+                        `;
+                    } else {
+                        statusDiv.innerHTML = '<span class="warning">⚠️ Not Authenticated</span>';
+                    }
+                } catch (e) {
+                    statusDiv.innerHTML = '<span class="error">❌ Invalid auth data</span>';
+                }
+            } else {
+                statusDiv.innerHTML = '<span class="warning">⚠️ No auth data found</span>';
+            }
+        }
+
+        function clearStorage() {
+            localStorage.clear();
+            sessionStorage.clear();
+            alert('✅ Storage cleared! Refresh the app to see changes.');
+            updateAuthStatus();
+        }
+
+        function checkAuthState() {
+            const authData = localStorage.getItem('auth-storage');
+            const output = document.getElementById('authStateOutput');
+
+            if (authData) {
+                try {
+                    const parsed = JSON.parse(authData);
+                    output.textContent = JSON.stringify(parsed, null, 2);
+                } catch (e) {
+                    output.textContent = 'Error parsing auth data: ' + e.message;
+                }
+            } else {
+                output.textContent = 'No auth data found in localStorage';
+            }
+        }
+
+        function openApp() {
+            window.open('http://localhost:3000', '_blank');
+        }
+
+        function checkCurrentView() {
+            const authData = localStorage.getItem('auth-storage');
+            if (authData) {
+                try {
+                    const parsed = JSON.parse(authData);
+                    if (parsed.state?.isAuthenticated) {
+                        alert('✅ You should be on the Dashboard view.\n\nIf you see the classic view instead, the bug is still present.');
+                    } else {
+                        alert('⚠️ Not authenticated. Please log in first.');
+                    }
+                } catch (e) {
+                    alert('❌ Error checking auth state');
+                }
+            } else {
+                alert('⚠️ No auth data. Please log in first.');
+            }
+        }
+
+        function forceLogout() {
+            localStorage.removeItem('auth-storage');
+            sessionStorage.clear();
+            alert('✅ Logged out! Refresh the app.');
+            updateAuthStatus();
+        }
+
+        function viewConsoleErrors() {
+            alert('Open browser DevTools (F12) and check the Console tab for errors.');
+        }
+
+        // Update status on load
+        updateAuthStatus();
+
+        // Auto-refresh status every 2 seconds
+        setInterval(updateAuthStatus, 2000);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+╔══════════════════════════════════════════════════════════════╗
+║     REAL-TIME STATS - RESTART AND TEST INSTRUCTIONS          ║
+╚══════════════════════════════════════════════════════════════╝
+
+🔧 STEP 1: RESTART BACKEND
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+   1. Stop current backend (Ctrl+C in backend terminal)
+   
+   2. Restart:
+      cd backend
+      python -m uvicorn src.api:app --reload
+   
+   3. Wait for:
+      ✓ Connected to MongoDB: githubbug
+      ✓ Enhanced features enabled
+      INFO: Uvicorn running on http://127.0.0.1:8000
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🌐 STEP 2: REFRESH FRONTEND
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+   In your browser (http://localhost:3000):
+   
+   Press: Ctrl + Shift + R (hard refresh)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🧪 STEP 3: TEST REAL-TIME UPDATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+   1. Look at sidebar "YOUR STATS":
+      Current: Total Analyses: 1
+   
+   2. Go to "Repositories" tab
+   
+   3. Click "Analyze" on ANY repository
+   
+   4. Watch backend console for:
+      💾 Saving analysis for user: 60312089
+      ✅ Analysis saved to MongoDB for user 60312089
+   
+   5. Watch sidebar stats update:
+      Total Analyses: 1 → 2 ✅
+      (Updates in 1-2 seconds!)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ SUCCESS INDICATORS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+   Backend Console:
+   ✓ 💾 Saving analysis for user: 60312089
+   ✓ ✅ Analysis saved to MongoDB for user 60312089
+   
+   Browser Console (F12):
+   ✓ Analyzing repository: ... for user: 60312089
+   ✓ ✅ Analysis complete: {...}
+   ✓ 📊 Triggering stats refresh for user: 60312089
+   ✓ 🔄 Calling onAnalysisComplete...
+   ✓ Stats received: {total_analyses: 2, ...}
+   
+   Sidebar:
+   ✓ Numbers increase automatically
+   ✓ Update happens in 1-2 seconds
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🆘 IF STATS DON'T UPDATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+   Option 1: Manual Refresh
+   → Click 🔄 button next to "Your Stats" in sidebar
+   
+   Option 2: Check Data
+   → Run: python backend/check_user_stats.py
+   → Verify analysis count increased
+   
+   Option 3: Check Logs
+   → Backend: Look for "💾 Saving analysis" message
+   → Browser: Press F12, check console for errors
+   
+   Option 4: Hard Reset
+   → Ctrl+Shift+R in browser
+   → Restart backend
+   → Try again
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📊 VERIFY DATA SAVED
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+   After analyzing, run:
+   
+   python backend/check_user_stats.py
+   
+   Should show:
+   User ID: 60312089
+   Username: gryffindowr
+   Analysis Count: 2 (increased!)
+   Stats - Total Analyses: 2
+   Stats - Repositories: 2
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 WHAT'S NEW
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+   ✨ Triple refresh mechanism (0s, 1s, 2s)
+   ✨ Manual refresh button (🔄) in sidebar
+   ✨ Enhanced logging with emojis
+   ✨ Better error handling
+   ✨ Faster update times (1-2 seconds)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📚 MORE HELP
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+   • FINAL_FIX_REALTIME_STATS.md - Complete fix details
+   • test-live-update.bat - Automated testing
+   • DEBUG_STATS_ZERO.md - Troubleshooting guide
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Ready? Restart backend and test! 🚀
+
+╚══════════════════════════════════════════════════════════════╝

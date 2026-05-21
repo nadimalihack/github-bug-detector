@@ -1,0 +1,42 @@
+# Development and Testing Dependencies
+
+# Testing
+pytest==7.4.3
+pytest-cov==4.1.0
+pytest-asyncio==0.21.1
+pytest-mock==3.12.0
+pytest-xdist==3.5.0
+pytest-timeout==2.2.0
+coverage==7.3.4
+
+# Code Quality
+black==23.12.1
+flake8==7.0.0
+pylint==3.0.3
+isort==5.13.2
+mypy==1.8.0
+bandit==1.7.6
+
+# Pre-commit
+pre-commit==3.6.0
+
+# Documentation
+sphinx==7.2.6
+sphinx-rtd-theme==2.0.0
+sphinx-autodoc-typehints==1.25.2
+
+# Security
+safety==3.0.1
+
+# Type Stubs
+types-requests==2.31.0.20240106
+types-python-jose==3.3.4.8
+
+# Development Tools
+ipython==8.19.0
+ipdb==0.13.13
+python-dotenv==1.0.0
+
+# API Testing
+httpx==0.25.2
+fastapi[all]==0.109.0

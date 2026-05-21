@@ -1,0 +1,124 @@
+🔧 QUICK FIX FOR OAUTH LOGIN LOOP
+================================
+
+The app returns to login page after GitHub authorization? Follow these steps:
+
+STEP 1: CHECK GITHUB OAUTH APP SETTINGS
+---------------------------------------
+1. Go to: https://github.com/settings/developers
+2. Click on your OAuth App
+3. Make sure "Authorization callback URL" is EXACTLY:
+   http://localhost:3000/auth/callback
+
+   ⚠️ MUST BE EXACT - no trailing slash, no typos!
+
+STEP 2: CLEAR BROWSER DATA (CRITICAL!)
+--------------------------------------
+1. Press F12 (open DevTools)
+2. Go to "Application" tab
+3. Click "Clear storage" in left sidebar
+4. Click "Clear site data" button
+5. Close browser COMPLETELY
+6. Reopen browser
+
+STEP 3: RESTART BACKEND
+-----------------------
+Terminal 1:
+cd backend
+# Press Ctrl+C to stop if running
+python run.py
+
+Wait for: "Uvicorn running on http://0.0.0.0:8000"
+
+STEP 4: RESTART FRONTEND
+------------------------
+Terminal 2:
+cd frontend
+# Press Ctrl+C to stop if running
+npm run dev
+
+Wait for: "Local: http://localhost:3000/"
+
+STEP 5: TEST OAUTH FLOW
+-----------------------
+1. Go to: http://localhost:3000
+2. Click "Login" button
+3. Click "Continue with GitHub"
+4. Watch for spinner animation
+5. Authorize on GitHub
+6. Should redirect to dashboard ✅
+
+STEP 6: IF STILL NOT WORKING - CHECK CONSOLE
+--------------------------------------------
+1. Press F12 (open DevTools)
+2. Go to "Console" tab
+3. Click "Continue with GitHub"
+4. Look for these messages:
+
+   Expected (SUCCESS):
+   🔑 OAuth code detected, processing...
+   🔄 Processing OAuth callback with code: ...
+   ✅ Auth callback successful, user: [username]
+   ✅ Authentication detected, navigating to dashboard
+
+   If you see ERROR messages, check:
+   - "Enhanced features not available" → Run: pip install google-generativeai authlib python-jose[cryptography] httpx
+   - "Authentication failed" → Check GitHub OAuth App settings
+   - "Failed to fetch" → Backend not running
+
+STEP 7: USE DEBUG TOOL
+----------------------
+Open in browser: test-oauth-debug.html
+
+Click these buttons in order:
+1. "Test Backend" → Should show ✅
+2. "Test /auth/github" → Should show authorization URL
+3. Check that redirect_uri matches: http://localhost:3000/auth/callback
+
+COMMON ISSUES:
+--------------
+
+❌ Issue: "Enhanced features not available (503)"
+✅ Fix: cd backend && pip install google-generativeai authlib python-jose[cryptography] httpx
+
+❌ Issue: Redirect URI mismatch
+✅ Fix: Update GitHub OAuth App callback URL to: http://localhost:3000/auth/callback
+
+❌ Issue: Backend not responding
+✅ Fix: Make sure backend is running on port 8000
+
+❌ Issue: Frontend on wrong port
+✅ Fix: Check vite.config.js has port: 3000
+
+❌ Issue: Browser cache
+✅ Fix: Clear all site data (see STEP 2)
+
+STILL NOT WORKING?
+------------------
+1. Open test-oauth-debug.html
+2. Run all tests
+3. Share the console output
+
+OR
+
+Try manual test:
+1. Go to: http://localhost:8000/auth/github
+2. Copy the authorization_url from response
+3. Open that URL in browser
+4. Authorize on GitHub
+5. After redirect, open test-oauth-debug.html
+6. Click "Test Callback"
+7. Should save auth data
+8. Reload your app
+
+VERIFICATION:
+------------
+OAuth is working when you see:
+✅ Spinner when clicking "Continue with GitHub"
+✅ Redirect to GitHub authorization page
+✅ Redirect back to your app
+✅ Dashboard opens automatically
+✅ Your avatar and name in header
+✅ Clean URL (no ?code=...)
+
+Need help? Check FIX_OAUTH_LOOP.md for detailed troubleshooting.

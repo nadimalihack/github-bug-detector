@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAuth Debug Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #0d1117;
+            color: #c9d1d9;
+        }
+
+        .test-section {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background: #238636;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        button:hover {
+            background: #2ea043;
+        }
+
+        .output {
+            background: #0d1117;
+            border: 1px solid #30363d;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 10px;
+            white-space: pre-wrap;
+            font-family: monospace;
+            font-size: 12px;
+        }
+
+        .success {
+            color: #3fb950;
+        }
+
+        .error {
+            color: #f85149;
+        }
+
+        .info {
+            color: #58a6ff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🔍 OAuth Debug Tool</h1>
+
+    <div class="test-section">
+        <h2>1. Test Backend Connection</h2>
+        <button onclick="testBackend()">Test Backend</button>
+        <div id="backend-output" class="output"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>2. Test OAuth Endpoint</h2>
+        <button onclick="testOAuthEndpoint()">Test /auth/github</button>
+        <div id="oauth-output" class="output"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>3. Check URL Parameters</h2>
+        <button onclick="checkURLParams()">Check Current URL</button>
+        <div id="url-output" class="output"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>4. Test OAuth Callback (if code present)</h2>
+        <button onclick="testCallback()">Test Callback</button>
+        <div id="callback-output" class="output"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>5. Check LocalStorage</h2>
+        <button onclick="checkStorage()">Check Storage</button>
+        <button onclick="clearStorage()">Clear Storage</button>
+        <div id="storage-output" class="output"></div>
+    </div>
+
+    <script>
+        const BACKEND_URL = 'http://localhost:8000';
+
+        function log(elementId, message, type = 'info') {
+            const output = document.getElementById(elementId);
+            const timestamp = new Date().toLocaleTimeString();
+            const className = type === 'error' ? 'error' : type === 'success' ? 'success' : 'info';
+            output.innerHTML += `<span class="${className}">[${timestamp}] ${message}</span>\n`;
+        }
+
+        async function testBackend() {
+            const output = document.getElementById('backend-output');
+            output.innerHTML = '';
+
+            try {
+                log('backend-output', '🔄 Testing backend connection...', 'info');
+                const response = await fetch(`${BACKEND_URL}/`);
+                const data = await response.json();
+                log('backend-output', `✅ Backend is running: ${JSON.stringify(data, null, 2)}`, 'success');
+            } catch (error) {
+                log('backend-output', `❌ Backend connection failed: ${error.message}`, 'error');
+                log('backend-output', '💡 Make sure backend is running: cd backend && python run.py', 'info');
+            }
+        }
+
+        async function testOAuthEndpoint() {
+            const output = document.getElementById('oauth-output');
+            output.innerHTML = '';
+
+            try {
+                log('oauth-output', '🔄 Testing OAuth endpoint...', 'info');
+                const response = await fetch(`${BACKEND_URL}/auth/github`);
+
+                if (response.status === 503) {
+                    log('oauth-output', '⚠️ Enhanced features not available (503)', 'error');
+                    log('oauth-output', '💡 Install dependencies: pip install google-generativeai authlib python-jose[cryptography] httpx', 'info');
+                    return;
+                }
+
+                const data = await response.json();
+                log('oauth-output', `✅ OAuth endpoint working`, 'success');
+                log('oauth-output', `Authorization URL: ${data.authorization_url}`, 'info');
+
+                // Parse the URL to check parameters
+                const url = new URL(data.authorization_url);
+                log('oauth-output', `Client ID: ${url.searchParams.get('client_id')}`, 'info');
+                log('oauth-output', `Redirect URI: ${url.searchParams.get('redirect_uri')}`, 'info');
+                log('oauth-output', `Scope: ${url.searchParams.get('scope')}`, 'info');
+            } catch (error) {
+                log('oauth-output', `❌ OAuth endpoint failed: ${error.message}`, 'error');
+            }
+        }
+
+        function checkURLParams() {
+            const output = document.getElementById('url-output');
+            output.innerHTML = '';
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const code = urlParams.get('code');
+            const error = urlParams.get('error');
+
+            log('url-output', `Current URL: ${window.location.href}`, 'info');
+            log('url-output', `Has OAuth code: ${code ? 'YES ✅' : 'NO ❌'}`, code ? 'success' : 'info');
+
+            if (code) {
+                log('url-output', `Code: ${code.substring(0, 20)}...`, 'info');
+            }
+
+            if (error) {
+                log('url-output', `OAuth Error: ${error}`, 'error');
+                log('url-output', `Error Description: ${urlParams.get('error_description')}`, 'error');
+            }
+        }
+
+        async function testCallback() {
+            const output = document.getElementById('callback-output');
+            output.innerHTML = '';
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const code = urlParams.get('code');
+
+            if (!code) {
+                log('callback-output', '❌ No OAuth code in URL', 'error');
+                log('callback-output', '💡 Click "Continue with GitHub" first to get a code', 'info');
+                return;
+            }
+
+            try {
+                log('callback-output', '🔄 Testing callback with code...', 'info');
+                log('callback-output', `Code: ${code.substring(0, 20)}...`, 'info');
+
+                const response = await fetch(`${BACKEND_URL}/auth/callback?code=${code}`, {
+                    method: 'POST'
+                });
+
+                if (!response.ok) {
+                    const errorText = await response.text();
+                    log('callback-output', `❌ Callback failed (${response.status}): ${errorText}`, 'error');
+                    return;
+                }
+
+                const data = await response.json();
+                log('callback-output', '✅ Callback successful!', 'success');
+                log('callback-output', `User: ${data.user?.login || data.user?.username}`, 'success');
+                log('callback-output', `User ID: ${data.user?.id}`, 'info');
+                log('callback-output', `JWT Token: ${data.token?.substring(0, 30)}...`, 'info');
+                log('callback-output', `GitHub Token: ${data.github_token?.substring(0, 20)}...`, 'info');
+
+                // Save to localStorage
+                const authData = {
+                    state: {
+                        user: data.user,
+                        token: data.token,
+                        githubToken: data.github_token,
+                        isAuthenticated: true
+                    }
+                };
+                localStorage.setItem('auth-storage', JSON.stringify(authData));
+                log('callback-output', '💾 Saved to localStorage', 'success');
+                log('callback-output', '🔄 Reload the page to see dashboard', 'info');
+
+            } catch (error) {
+                log('callback-output', `❌ Callback error: ${error.message}`, 'error');
+            }
+        }
+
+        function checkStorage() {
+            const output = document.getElementById('storage-output');
+            output.innerHTML = '';
+
+            const authStorage = localStorage.getItem('auth-storage');
+            const sessionProcessing = sessionStorage.getItem('oauth_processing');
+
+            log('storage-output', '=== LocalStorage ===', 'info');
+            if (authStorage) {
+                try {
+                    const parsed = JSON.parse(authStorage);
+                    log('storage-output', JSON.stringify(parsed, null, 2), 'success');
+                } catch (e) {
+                    log('storage-output', authStorage, 'info');
+                }
+            } else {
+                log('storage-output', 'No auth data in localStorage', 'info');
+            }
+
+            log('storage-output', '\n=== SessionStorage ===', 'info');
+            log('storage-output', `oauth_processing: ${sessionProcessing || 'not set'}`, 'info');
+        }
+
+        function clearStorage() {
+            localStorage.clear();
+            sessionStorage.clear();
+            log('storage-output', '🗑️ Storage cleared', 'success');
+        }
+
+        // Auto-check URL params on load
+        window.addEventListener('load', () => {
+            checkURLParams();
+            checkStorage();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+{
+  "id": "test123",
+  "username": "testuser",
+  "email": "test@test.com",
+  "name": "Test User",
+  "avatar_url": "http://test.com/avatar.jpg",
+  "github_url": null,
+  "bio": null,
+  "company": null,
+  "location": null,
+  "created_at": "2025-10-28T13:45:58.413387",
+  "updated_at": "2025-10-28T13:45:58.449408",
+  "last_login": "2025-10-28T13:45:58.413387",
+  "analysis_count": 1,
+  "repositories": [
+    {
+      "name": "test/repo",
+      "url": "http://test.com",
+      "risk_score": 0.5,
+      "analyzed_at": "2025-10-28T13:45:58.449408"
+    }
+  ]
+}

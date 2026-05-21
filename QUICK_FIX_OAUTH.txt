@@ -1,0 +1,45 @@
+========================================
+QUICK FIX: OAuth Redirect Issue
+========================================
+
+PROBLEM:
+After GitHub OAuth login, app redirects to classic view instead of dashboard.
+
+SOLUTION:
+Fixed routing logic in frontend/src/App.jsx
+
+HOW TO APPLY:
+1. The fix is already applied to the code
+2. Refresh your browser (Ctrl+Shift+R)
+3. Clear browser storage if needed:
+   - Open DevTools (F12)
+   - Console tab
+   - Run: localStorage.clear(); location.reload()
+
+TEST THE FIX:
+1. Go to http://localhost:3000
+2. Click "Login for Dashboard"
+3. Click "Continue with GitHub"
+4. Authorize the app
+5. ✅ Should show Dashboard (not classic view)
+
+WHAT CHANGED:
+- Simplified routing logic
+- Priority: Authenticated → Dashboard
+- Priority: Login clicked → Login Page  
+- Priority: Default → Classic View
+
+FILES MODIFIED:
+✅ frontend/src/App.jsx
+
+TESTING TOOLS:
+- Open test-oauth-flow.html in browser for testing helper
+- See FIX_OAUTH_REDIRECT.md for detailed explanation
+
+QUICK TEST:
+1. Clear storage: localStorage.clear()
+2. Refresh page
+3. Login with GitHub
+4. Verify dashboard appears
+
+========================================

@@ -1,0 +1,4241 @@
+[
+  {
+    "timestamp": "2025-10-23T14:41:04.757714",
+    "repository": "test/repo1",
+    "files_analyzed": 2,
+    "overall_risk": 0.5,
+    "modules": [
+      {
+        "file": "auth.js",
+        "risk_score": 0.85,
+        "critical_issues": 2,
+        "high_issues": 1
+      },
+      {
+        "file": "db.js",
+        "risk_score": 0.45,
+        "critical_issues": 0,
+        "high_issues": 1
+      }
+    ],
+    "metadata": {},
+    "feedback": [
+      {
+        "file": "auth.js",
+        "actual_had_bugs": true,
+        "severity": null,
+        "timestamp": "2025-10-23T14:41:04.768865"
+      },
+      {
+        "file": "db.js",
+        "actual_had_bugs": false,
+        "severity": null,
+        "timestamp": "2025-10-23T14:41:04.768865"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-10-23T14:41:04.757714",
+    "repository": "test/repo2",
+    "files_analyzed": 2,
+    "overall_risk": 0.5,
+    "modules": [
+      {
+        "file": "api.js",
+        "risk_score": 0.65,
+        "critical_issues": 1,
+        "high_issues": 0
+      },
+      {
+        "file": "utils.js",
+        "risk_score": 0.25,
+        "critical_issues": 0,
+        "high_issues": 0
+      }
+    ],
+    "metadata": {},
+    "feedback": [
+      {
+        "file": "api.js",
+        "actual_had_bugs": true,
+        "severity": null,
+        "timestamp": "2025-10-23T14:41:04.768865"
+      },
+      {
+        "file": "utils.js",
+        "actual_had_bugs": false,
+        "severity": null,
+        "timestamp": "2025-10-23T14:41:04.773633"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-11-16T13:31:12.241717",
+    "repository": "shoibahmad/Finance-App",
+    "files_analyzed": 18,
+    "overall_risk": 0.28,
+    "modules": [
+      {
+        "file": ".gitignore",
+        "risk_score": 0.4,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/build.gradle",
+        "risk_score": 0.4,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "README.md",
+        "risk_score": 0.35,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 12,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196632952-349c0bf9-a0a2-45d2-a0c1-3f7e34dd823c.png\" alt=\"\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 12,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196632952-349c0bf9-a0a2-45d2-a0c1-3f7e34dd823c.png\" alt=\"\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": ".metadata",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "LICENSE",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 3,
+            "code_snippet": "Copyright (c) 2023 flutter skills",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": "analysis_options.yaml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/.gitignore",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/debug/AndroidManifest.xml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/main/AndroidManifest.xml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/main/kotlin/com/example/managment/MainActivity.kt",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": ".firebaserc",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": ".vscode/settings.json",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/google-services.json",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 3,
+            "code_snippet": "\"project_number\": \"982317055542\",",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 10,
+            "code_snippet": "\"mobilesdk_app_id\": \"1:982317055542:android:03b32f2959fba3c76ca297\",",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": "android/build.gradle",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/gradle/wrapper/gradle-wrapper.properties",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/connector.yaml",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/mutations.gql",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/queries.gql",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      }
+    ],
+    "metadata": {
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "language": "Dart",
+      "description": null
+    },
+    "feedback": null
+  },
+  {
+    "timestamp": "2025-11-16T13:35:35.406101",
+    "repository": "shoibahmad/Finance-App",
+    "files_analyzed": 18,
+    "overall_risk": 0.28,
+    "modules": [
+      {
+        "file": ".gitignore",
+        "risk_score": 0.4,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/build.gradle",
+        "risk_score": 0.4,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "README.md",
+        "risk_score": 0.35,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 12,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196632952-349c0bf9-a0a2-45d2-a0c1-3f7e34dd823c.png\" alt=\"\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 12,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196632952-349c0bf9-a0a2-45d2-a0c1-3f7e34dd823c.png\" alt=\"\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": ".metadata",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "LICENSE",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 3,
+            "code_snippet": "Copyright (c) 2023 flutter skills",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": "analysis_options.yaml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/.gitignore",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/debug/AndroidManifest.xml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/main/AndroidManifest.xml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/main/kotlin/com/example/managment/MainActivity.kt",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": ".firebaserc",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": ".vscode/settings.json",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/google-services.json",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 3,
+            "code_snippet": "\"project_number\": \"982317055542\",",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 10,
+            "code_snippet": "\"mobilesdk_app_id\": \"1:982317055542:android:03b32f2959fba3c76ca297\",",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": "android/build.gradle",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/gradle/wrapper/gradle-wrapper.properties",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/connector.yaml",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/mutations.gql",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/queries.gql",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      }
+    ],
+    "metadata": {
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "language": "Dart",
+      "description": null
+    },
+    "feedback": null
+  },
+  {
+    "timestamp": "2025-11-16T13:38:52.695392",
+    "repository": "shoibahmad/Finance-App",
+    "files_analyzed": 18,
+    "overall_risk": 0.28,
+    "modules": [
+      {
+        "file": ".gitignore",
+        "risk_score": 0.4,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/build.gradle",
+        "risk_score": 0.4,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "README.md",
+        "risk_score": 0.35,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 12,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196632952-349c0bf9-a0a2-45d2-a0c1-3f7e34dd823c.png\" alt=\"\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 12,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196632952-349c0bf9-a0a2-45d2-a0c1-3f7e34dd823c.png\" alt=\"\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": ".metadata",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "LICENSE",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 3,
+            "code_snippet": "Copyright (c) 2023 flutter skills",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": "analysis_options.yaml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/.gitignore",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/debug/AndroidManifest.xml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/main/AndroidManifest.xml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/main/kotlin/com/example/managment/MainActivity.kt",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": ".firebaserc",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": ".vscode/settings.json",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/google-services.json",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 3,
+            "code_snippet": "\"project_number\": \"982317055542\",",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 10,
+            "code_snippet": "\"mobilesdk_app_id\": \"1:982317055542:android:03b32f2959fba3c76ca297\",",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": "android/build.gradle",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/gradle/wrapper/gradle-wrapper.properties",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/connector.yaml",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/mutations.gql",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/queries.gql",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      }
+    ],
+    "metadata": {
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "language": "Dart",
+      "description": null
+    },
+    "feedback": null
+  },
+  {
+    "timestamp": "2025-11-16T14:03:05.721298",
+    "repository": "shoibahmad/Finance-App",
+    "files_analyzed": 18,
+    "overall_risk": 0.28,
+    "modules": [
+      {
+        "file": ".gitignore",
+        "risk_score": 0.4,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/build.gradle",
+        "risk_score": 0.4,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "README.md",
+        "risk_score": 0.35,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 12,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196632952-349c0bf9-a0a2-45d2-a0c1-3f7e34dd823c.png\" alt=\"\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 12,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196632952-349c0bf9-a0a2-45d2-a0c1-3f7e34dd823c.png\" alt=\"\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": ".metadata",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "LICENSE",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 3,
+            "code_snippet": "Copyright (c) 2023 flutter skills",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": "analysis_options.yaml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/.gitignore",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/debug/AndroidManifest.xml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/main/AndroidManifest.xml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/main/kotlin/com/example/managment/MainActivity.kt",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": ".firebaserc",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": ".vscode/settings.json",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/google-services.json",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 3,
+            "code_snippet": "\"project_number\": \"982317055542\",",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 10,
+            "code_snippet": "\"mobilesdk_app_id\": \"1:982317055542:android:03b32f2959fba3c76ca297\",",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": "android/build.gradle",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/gradle/wrapper/gradle-wrapper.properties",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/connector.yaml",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/mutations.gql",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/queries.gql",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      }
+    ],
+    "metadata": {
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "language": "Dart",
+      "description": null
+    },
+    "feedback": null
+  },
+  {
+    "timestamp": "2025-11-16T14:05:15.529216",
+    "repository": "shoibahmad/Finance-App",
+    "files_analyzed": 18,
+    "overall_risk": 0.28,
+    "modules": [
+      {
+        "file": ".gitignore",
+        "risk_score": 0.4,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/build.gradle",
+        "risk_score": 0.4,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "README.md",
+        "risk_score": 0.35,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 12,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196632952-349c0bf9-a0a2-45d2-a0c1-3f7e34dd823c.png\" alt=\"\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 12,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196632952-349c0bf9-a0a2-45d2-a0c1-3f7e34dd823c.png\" alt=\"\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": ".metadata",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "LICENSE",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 3,
+            "code_snippet": "Copyright (c) 2023 flutter skills",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": "analysis_options.yaml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/.gitignore",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/debug/AndroidManifest.xml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/main/AndroidManifest.xml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/main/kotlin/com/example/managment/MainActivity.kt",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": ".firebaserc",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": ".vscode/settings.json",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/google-services.json",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 3,
+            "code_snippet": "\"project_number\": \"982317055542\",",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 10,
+            "code_snippet": "\"mobilesdk_app_id\": \"1:982317055542:android:03b32f2959fba3c76ca297\",",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": "android/build.gradle",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/gradle/wrapper/gradle-wrapper.properties",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/connector.yaml",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/mutations.gql",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/queries.gql",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      }
+    ],
+    "metadata": {
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "language": "Dart",
+      "description": null
+    },
+    "feedback": null
+  },
+  {
+    "timestamp": "2025-11-16T14:08:30.623094",
+    "repository": "shoibahmad/Finance-App",
+    "files_analyzed": 18,
+    "overall_risk": 0.28,
+    "modules": [
+      {
+        "file": ".gitignore",
+        "risk_score": 0.4,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/build.gradle",
+        "risk_score": 0.4,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "README.md",
+        "risk_score": 0.35,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 12,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196632952-349c0bf9-a0a2-45d2-a0c1-3f7e34dd823c.png\" alt=\"\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 12,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196632952-349c0bf9-a0a2-45d2-a0c1-3f7e34dd823c.png\" alt=\"\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": ".metadata",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "LICENSE",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 3,
+            "code_snippet": "Copyright (c) 2023 flutter skills",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": "analysis_options.yaml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/.gitignore",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/debug/AndroidManifest.xml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/main/AndroidManifest.xml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/main/kotlin/com/example/managment/MainActivity.kt",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": ".firebaserc",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": ".vscode/settings.json",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/google-services.json",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 3,
+            "code_snippet": "\"project_number\": \"982317055542\",",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 10,
+            "code_snippet": "\"mobilesdk_app_id\": \"1:982317055542:android:03b32f2959fba3c76ca297\",",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": "android/build.gradle",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/gradle/wrapper/gradle-wrapper.properties",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/connector.yaml",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/mutations.gql",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/queries.gql",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      }
+    ],
+    "metadata": {
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "language": "Dart",
+      "description": null
+    },
+    "feedback": null
+  },
+  {
+    "timestamp": "2025-11-16T14:14:32.851599",
+    "repository": "shoibahmad/Finance-App",
+    "files_analyzed": 18,
+    "overall_risk": 0.28,
+    "modules": [
+      {
+        "file": ".gitignore",
+        "risk_score": 0.4,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/build.gradle",
+        "risk_score": 0.4,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "README.md",
+        "risk_score": 0.35,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 12,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196632952-349c0bf9-a0a2-45d2-a0c1-3f7e34dd823c.png\" alt=\"\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 12,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196632952-349c0bf9-a0a2-45d2-a0c1-3f7e34dd823c.png\" alt=\"\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": ".metadata",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "LICENSE",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 3,
+            "code_snippet": "Copyright (c) 2023 flutter skills",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": "analysis_options.yaml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/.gitignore",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/debug/AndroidManifest.xml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/main/AndroidManifest.xml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/main/kotlin/com/example/managment/MainActivity.kt",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": ".firebaserc",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": ".vscode/settings.json",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/google-services.json",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 3,
+            "code_snippet": "\"project_number\": \"982317055542\",",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 10,
+            "code_snippet": "\"mobilesdk_app_id\": \"1:982317055542:android:03b32f2959fba3c76ca297\",",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": "android/build.gradle",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/gradle/wrapper/gradle-wrapper.properties",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/connector.yaml",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/mutations.gql",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/queries.gql",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      }
+    ],
+    "metadata": {
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "language": "Dart",
+      "description": null
+    },
+    "feedback": null
+  },
+  {
+    "timestamp": "2025-11-16T14:19:08.439392",
+    "repository": "shoibahmad/Finance-App",
+    "files_analyzed": 18,
+    "overall_risk": 0.28,
+    "modules": [
+      {
+        "file": ".gitignore",
+        "risk_score": 0.4,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/build.gradle",
+        "risk_score": 0.4,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "README.md",
+        "risk_score": 0.35,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 12,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196632952-349c0bf9-a0a2-45d2-a0c1-3f7e34dd823c.png\" alt=\"\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 12,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196632952-349c0bf9-a0a2-45d2-a0c1-3f7e34dd823c.png\" alt=\"\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": ".metadata",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "LICENSE",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 3,
+            "code_snippet": "Copyright (c) 2023 flutter skills",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": "analysis_options.yaml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/.gitignore",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/debug/AndroidManifest.xml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/main/AndroidManifest.xml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/main/kotlin/com/example/managment/MainActivity.kt",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": ".firebaserc",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": ".vscode/settings.json",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/google-services.json",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 3,
+            "code_snippet": "\"project_number\": \"982317055542\",",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 10,
+            "code_snippet": "\"mobilesdk_app_id\": \"1:982317055542:android:03b32f2959fba3c76ca297\",",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": "android/build.gradle",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/gradle/wrapper/gradle-wrapper.properties",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/connector.yaml",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/mutations.gql",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/queries.gql",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      }
+    ],
+    "metadata": {
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "language": "Dart",
+      "description": null
+    },
+    "feedback": null
+  },
+  {
+    "timestamp": "2025-11-16T14:27:01.219852",
+    "repository": "shoibahmad/Finance-App",
+    "files_analyzed": 18,
+    "overall_risk": 0.28,
+    "modules": [
+      {
+        "file": ".gitignore",
+        "risk_score": 0.4,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/build.gradle",
+        "risk_score": 0.4,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "README.md",
+        "risk_score": 0.35,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 12,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196632952-349c0bf9-a0a2-45d2-a0c1-3f7e34dd823c.png\" alt=\"\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 12,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196632952-349c0bf9-a0a2-45d2-a0c1-3f7e34dd823c.png\" alt=\"\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": ".metadata",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "LICENSE",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 3,
+            "code_snippet": "Copyright (c) 2023 flutter skills",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": "analysis_options.yaml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/.gitignore",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/debug/AndroidManifest.xml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/main/AndroidManifest.xml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/main/kotlin/com/example/managment/MainActivity.kt",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": ".firebaserc",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": ".vscode/settings.json",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/google-services.json",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 3,
+            "code_snippet": "\"project_number\": \"982317055542\",",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 10,
+            "code_snippet": "\"mobilesdk_app_id\": \"1:982317055542:android:03b32f2959fba3c76ca297\",",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": "android/build.gradle",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/gradle/wrapper/gradle-wrapper.properties",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/connector.yaml",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/mutations.gql",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/queries.gql",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      }
+    ],
+    "metadata": {
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "language": "Dart",
+      "description": null
+    },
+    "feedback": null
+  },
+  {
+    "timestamp": "2025-11-16T14:28:28.755585",
+    "repository": "shoibahmad/Finance-App",
+    "files_analyzed": 18,
+    "overall_risk": 0.28,
+    "modules": [
+      {
+        "file": ".gitignore",
+        "risk_score": 0.4,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/build.gradle",
+        "risk_score": 0.4,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "README.md",
+        "risk_score": 0.35,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 12,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196632952-349c0bf9-a0a2-45d2-a0c1-3f7e34dd823c.png\" alt=\"\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 12,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196632952-349c0bf9-a0a2-45d2-a0c1-3f7e34dd823c.png\" alt=\"\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": ".metadata",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "LICENSE",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 3,
+            "code_snippet": "Copyright (c) 2023 flutter skills",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": "analysis_options.yaml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/.gitignore",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/debug/AndroidManifest.xml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/main/AndroidManifest.xml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/main/kotlin/com/example/managment/MainActivity.kt",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": ".firebaserc",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": ".vscode/settings.json",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/google-services.json",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 3,
+            "code_snippet": "\"project_number\": \"982317055542\",",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 10,
+            "code_snippet": "\"mobilesdk_app_id\": \"1:982317055542:android:03b32f2959fba3c76ca297\",",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": "android/build.gradle",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/gradle/wrapper/gradle-wrapper.properties",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/connector.yaml",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/mutations.gql",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/queries.gql",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      }
+    ],
+    "metadata": {
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "language": "Dart",
+      "description": null
+    },
+    "feedback": null
+  },
+  {
+    "timestamp": "2025-11-16T14:34:22.246926",
+    "repository": "shoibahmad/Finance-App",
+    "files_analyzed": 18,
+    "overall_risk": 0.28,
+    "modules": [
+      {
+        "file": ".gitignore",
+        "risk_score": 0.4,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/build.gradle",
+        "risk_score": 0.4,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "README.md",
+        "risk_score": 0.35,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 12,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196632952-349c0bf9-a0a2-45d2-a0c1-3f7e34dd823c.png\" alt=\"\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 12,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196632952-349c0bf9-a0a2-45d2-a0c1-3f7e34dd823c.png\" alt=\"\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": ".metadata",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "LICENSE",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 3,
+            "code_snippet": "Copyright (c) 2023 flutter skills",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": "analysis_options.yaml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/.gitignore",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/debug/AndroidManifest.xml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/main/AndroidManifest.xml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/main/kotlin/com/example/managment/MainActivity.kt",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": ".firebaserc",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": ".vscode/settings.json",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/google-services.json",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 3,
+            "code_snippet": "\"project_number\": \"982317055542\",",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 10,
+            "code_snippet": "\"mobilesdk_app_id\": \"1:982317055542:android:03b32f2959fba3c76ca297\",",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": "android/build.gradle",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/gradle/wrapper/gradle-wrapper.properties",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/connector.yaml",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/mutations.gql",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/queries.gql",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      }
+    ],
+    "metadata": {
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "language": "Dart",
+      "description": null
+    },
+    "feedback": null
+  },
+  {
+    "timestamp": "2025-11-16T14:45:35.410590",
+    "repository": "shoibahmad/Finance-App",
+    "files_analyzed": 18,
+    "overall_risk": 0.28,
+    "modules": [
+      {
+        "file": ".gitignore",
+        "risk_score": 0.4,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/build.gradle",
+        "risk_score": 0.4,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "README.md",
+        "risk_score": 0.35,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 12,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196632952-349c0bf9-a0a2-45d2-a0c1-3f7e34dd823c.png\" alt=\"\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 12,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196632952-349c0bf9-a0a2-45d2-a0c1-3f7e34dd823c.png\" alt=\"\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": ".metadata",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "LICENSE",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 3,
+            "code_snippet": "Copyright (c) 2023 flutter skills",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": "analysis_options.yaml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/.gitignore",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/debug/AndroidManifest.xml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/main/AndroidManifest.xml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/main/kotlin/com/example/managment/MainActivity.kt",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": ".firebaserc",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": ".vscode/settings.json",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/google-services.json",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 3,
+            "code_snippet": "\"project_number\": \"982317055542\",",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 10,
+            "code_snippet": "\"mobilesdk_app_id\": \"1:982317055542:android:03b32f2959fba3c76ca297\",",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": "android/build.gradle",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/gradle/wrapper/gradle-wrapper.properties",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/connector.yaml",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/mutations.gql",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/queries.gql",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      }
+    ],
+    "metadata": {
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "language": "Dart",
+      "description": null
+    },
+    "feedback": null
+  },
+  {
+    "timestamp": "2025-11-16T14:52:53.103360",
+    "repository": "shoibahmad/Finance-App",
+    "files_analyzed": 18,
+    "overall_risk": 0.28,
+    "modules": [
+      {
+        "file": ".gitignore",
+        "risk_score": 0.4,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/build.gradle",
+        "risk_score": 0.4,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "README.md",
+        "risk_score": 0.35,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 12,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196632952-349c0bf9-a0a2-45d2-a0c1-3f7e34dd823c.png\" alt=\"\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 12,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196632952-349c0bf9-a0a2-45d2-a0c1-3f7e34dd823c.png\" alt=\"\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 13,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633092-f933f964-5930-4686-8ce8-9e702ebfb1b7.png\" alt=\"Screenshot_1659640778\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 14,
+            "code_snippet": "<img src=\"https://user-images.githubusercontent.com/102475069/196633198-ff6e1bdd-cad5-4085-b9d1-df5bd793f971.png\" alt=\"Screenshot_1666104775\" width=\"32%\"/>",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": ".metadata",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "LICENSE",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 3,
+            "code_snippet": "Copyright (c) 2023 flutter skills",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": "analysis_options.yaml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/.gitignore",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/debug/AndroidManifest.xml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/main/AndroidManifest.xml",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/main/kotlin/com/example/managment/MainActivity.kt",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": ".firebaserc",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": ".vscode/settings.json",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/google-services.json",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 3,
+            "code_snippet": "\"project_number\": \"982317055542\",",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          },
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 10,
+            "code_snippet": "\"mobilesdk_app_id\": \"1:982317055542:android:03b32f2959fba3c76ca297\",",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": "android/build.gradle",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/gradle/wrapper/gradle-wrapper.properties",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/connector.yaml",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/mutations.gql",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "dataconnect/connector/queries.gql",
+        "risk_score": 0.23,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      }
+    ],
+    "metadata": {
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "language": "Dart",
+      "description": null
+    },
+    "feedback": null
+  },
+  {
+    "timestamp": "2025-11-18T22:02:01.802453",
+    "repository": "shoibahmad/Food-POS",
+    "files_analyzed": 20,
+    "overall_risk": 0.26,
+    "modules": [
+      {
+        "file": "README.md",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "IMPROVEMENTS_SUMMARY.md",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "STRIPE_SETUP.md",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "lib/config/payment_config.dart",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "lib/data/dummy_data.dart",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 2,
+            "code_snippet": "Product(id: 14, name: 'Chicken Wings', price: 280.00, imageUrl: 'https://images.unsplash.com/photo-1527477396000-e27163b481c2?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=400', category: 'Appetizers'),",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": "lib/main.dart",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "lib/screens/desktop_pos_screen.dart",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "lib/screens/home_screen.dart",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "lib/screens/mobile_home_screen.dart",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "lib/screens/payment_screen.dart",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "lib/screens/payment_success_screen.dart",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": ".gitignore",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": ".metadata",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "analysis_options.yaml",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/.gitignore",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/build.gradle",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/debug/AndroidManifest.xml",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/main/AndroidManifest.xml",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/main/kotlin/com/example/food_pos/MainActivity.kt",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/main/res/drawable-v21/launch_background.xml",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      }
+    ],
+    "metadata": {
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "language": "Dart",
+      "description": "This is an designed for ordering an food by selecting from different categories of food."
+    },
+    "feedback": null
+  },
+  {
+    "timestamp": "2025-11-18T22:45:50.825753",
+    "repository": "shoibahmad/Food-POS",
+    "files_analyzed": 20,
+    "overall_risk": 0.26,
+    "modules": [
+      {
+        "file": "README.md",
+        "risk_score": 0.3,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "IMPROVEMENTS_SUMMARY.md",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "STRIPE_SETUP.md",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "lib/config/payment_config.dart",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "lib/data/dummy_data.dart",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 1,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": [
+          {
+            "type": "magic_numbers",
+            "severity": "low",
+            "message": "Magic numbers - consider using constants",
+            "line": 2,
+            "code_snippet": "Product(id: 14, name: 'Chicken Wings', price: 280.00, imageUrl: 'https://images.unsplash.com/photo-1527477396000-e27163b481c2?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=400', category: 'Appetizers'),",
+            "fix": "Define named constants for better code readability",
+            "impact": "Reduces code maintainability and clarity"
+          }
+        ]
+      },
+      {
+        "file": "lib/main.dart",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "lib/screens/desktop_pos_screen.dart",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "lib/screens/home_screen.dart",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "lib/screens/mobile_home_screen.dart",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "lib/screens/payment_screen.dart",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "lib/screens/payment_success_screen.dart",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": ".gitignore",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": ".metadata",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "analysis_options.yaml",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/.gitignore",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/build.gradle",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/debug/AndroidManifest.xml",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/main/AndroidManifest.xml",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/main/kotlin/com/example/food_pos/MainActivity.kt",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      },
+      {
+        "file": "android/app/src/main/res/drawable-v21/launch_background.xml",
+        "risk_score": 0.26,
+        "reason": "Low bug frequency and stable changes",
+        "code_quality_issues": 0,
+        "critical_issues": 0,
+        "high_issues": 0,
+        "detailed_issues": []
+      }
+    ],
+    "metadata": {
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "language": "Dart",
+      "description": "This is an designed for ordering an food by selecting from different categories of food."
+    },
+    "feedback": null
+  }
+]

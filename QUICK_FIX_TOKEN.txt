@@ -1,0 +1,77 @@
+╔══════════════════════════════════════════════════════════════╗
+║           FIX: Bad Credentials / Not Found Error            ║
+╚══════════════════════════════════════════════════════════════╝
+
+ERROR YOU'RE SEEING:
+  ❌ GitHub API error: Bad credentials
+  ❌ GitHub API error: Not Found (404)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+QUICK FIX (Takes 30 seconds):
+
+  1. Click your avatar (top right)
+  2. Click "Logout"
+  3. Click "Login with GitHub"
+  4. Authorize the app
+  5. Try analyzing again
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+WHY THIS HAPPENS:
+
+  ❌ Your GitHub token expired
+  ❌ Repository is private and you don't have access
+  ❌ Repository doesn't exist or was renamed
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+VERIFY REPOSITORY EXISTS:
+
+  Check if you can access:
+  https://github.com/gryffindowr/Three60onward
+
+  If you see "404 Not Found":
+  → Repository doesn't exist or is private
+  → Try a different repository
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+TEST WITH PUBLIC REPOSITORY:
+
+  Try these public repos to test:
+  ✓ facebook/react
+  ✓ microsoft/vscode
+  ✓ nodejs/node
+
+  If these work, the issue is with your specific repository.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+WHAT'S BEEN FIXED:
+
+  ✅ Better error messages
+  ✅ Detailed error descriptions
+  ✅ Helpful suggestions in UI
+  ✅ Longer toast duration for errors
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+RESTART BACKEND TO SEE FIXES:
+
+  1. Stop backend (Ctrl+C)
+  2. Restart:
+     cd backend
+     python -m uvicorn src.api:app --reload
+  3. Refresh browser (Ctrl+Shift+R)
+  4. Try analyzing again
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MOST COMMON SOLUTION:
+
+  👉 Log out and log in again
+  👉 This refreshes your GitHub token
+  👉 Takes 30 seconds
+
+╚══════════════════════════════════════════════════════════════╝

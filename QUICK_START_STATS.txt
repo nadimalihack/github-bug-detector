@@ -1,0 +1,126 @@
+╔══════════════════════════════════════════════════════════════╗
+║          BUG PREDICTOR PRO - REAL-TIME STATS                 ║
+║                    QUICK START GUIDE                         ║
+╚══════════════════════════════════════════════════════════════╝
+
+✅ YOUR STATS ARE WORKING!
+   User: gryffindowr (ID: 60312089)
+   Total Analyses: 1
+   Repositories: 1
+   Average Risk: 55%
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 QUICK START (Easiest Way)
+
+   Double-click: start-all.bat
+
+   This will:
+   ✓ Start backend server
+   ✓ Start frontend server
+   ✓ Open browser automatically
+   ✓ Show your stats immediately!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📊 WHAT YOU'LL SEE
+
+   Dashboard Sidebar (Updates every 5 seconds):
+   ┌─────────────────────┐
+   │ YOUR STATS          │
+   │ Total Analyses   1  │
+   │ Repositories     1  │
+   │ Avg Risk        55% │
+   └─────────────────────┘
+
+   Analytics Tab:
+   • Line chart showing risk trends
+   • Bar chart comparing repositories
+   • Green "Real-time" indicator (pulsing)
+   • Auto-updates every 10 seconds
+
+   Profile Tab:
+   • Your GitHub profile info
+   • Complete statistics
+   • Auto-updates every 10 seconds
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🧪 TEST REAL-TIME UPDATES
+
+   1. Go to "Repositories" tab
+   2. Click "Analyze" on any repository
+   3. Wait for analysis to complete
+   4. Watch sidebar stats update automatically!
+   5. Stats change: 1 → 2 within 5-10 seconds
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔧 MANUAL START (If needed)
+
+   Terminal 1 - Backend:
+   cd backend
+   python -m uvicorn src.api:app --reload
+
+   Terminal 2 - Frontend:
+   cd frontend
+   npm run dev
+
+   Browser:
+   http://localhost:5173
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ VERIFICATION
+
+   Check if data is saving:
+   python backend/check_user_stats.py
+
+   Should show:
+   User ID: 60312089
+   Username: gryffindowr
+   Analysis Count: 1
+   Stats - Total Analyses: 1
+   Stats - Repositories: 1
+   Stats - Average Risk: 55%
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+❓ TROUBLESHOOTING
+
+   Stats show 0?
+   → Make sure backend is running
+   → Check you're logged in (avatar in header)
+   → Hard refresh: Ctrl+Shift+R
+
+   Backend won't start?
+   → cd backend
+   → pip install -r requirements.txt
+   → python -m uvicorn src.api:app --reload
+
+   Frontend won't start?
+   → cd frontend
+   → npm install
+   → npm run dev
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📚 MORE HELP
+
+   • STATS_FIXED_SUMMARY.md - Complete overview
+   • START_SERVERS.md - Detailed startup guide
+   • DEBUG_STATS_ZERO.md - Troubleshooting guide
+   • REALTIME_DATA_GUIDE.md - Technical details
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✨ STATUS
+
+   ✅ MongoDB: CONNECTED
+   ✅ Data Saving: WORKING
+   ✅ Real-Time Updates: ENABLED
+   ✅ Your Stats: READY
+
+   Just start the servers and enjoy! 🚀
+
+╚══════════════════════════════════════════════════════════════╝

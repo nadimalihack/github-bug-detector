@@ -1,0 +1,86 @@
+╔══════════════════════════════════════════════════════════════╗
+║         REPOSITORY NOT FOUND - USE DASHBOARD INSTEAD         ║
+╚══════════════════════════════════════════════════════════════╝
+
+PROBLEM:
+  ❌ Repository: gryffindowr/Three60onward
+  ❌ Error: Not Found (404)
+  ❌ Reason: Repository is PRIVATE or doesn't exist
+
+CONFIRMED:
+  ✅ You have 0 public repositories
+  ✅ Three60onward is PRIVATE (if it exists)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✨ SOLUTION: USE THE DASHBOARD ✨
+
+  1. Click "Login for Dashboard" (green button, top right)
+  
+  2. Go to "Repositories" tab
+  
+  3. You'll see ALL your repositories:
+     ✓ Public repositories
+     ✓ Private repositories (like Three60onward!)
+     ✓ With full details
+  
+  4. Click "Analyze" on any repository
+  
+  5. Done! Results appear automatically
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+WHY DASHBOARD IS BETTER:
+
+  ✅ Works with private repositories
+  ✅ No token needed
+  ✅ Automatic authentication
+  ✅ Real-time stats
+  ✅ Analytics charts
+  ✅ Analysis history
+  ✅ Higher rate limits
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ALTERNATIVE: TEST WITH PUBLIC REPO
+
+  If you want to test classic view first, try:
+  
+  facebook/react
+  microsoft/vscode
+  nodejs/node
+
+  These are public and will work immediately!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CLASSIC VIEW vs DASHBOARD:
+
+  Classic View:
+  ❌ Only public repositories
+  ❌ Manual token required for private
+  ❌ Token expires
+  ❌ More complicated
+
+  Dashboard:
+  ✅ All repositories (public + private)
+  ✅ Automatic authentication
+  ✅ Never expires
+  ✅ Super easy!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+QUICK ACTION:
+
+  👉 Click "Login for Dashboard" button
+  👉 Go to "Repositories" tab
+  👉 Find Three60onward
+  👉 Click "Analyze"
+  👉 Done! ✨
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+The dashboard is designed for exactly this use case!
+It handles private repositories automatically.
+
+╚══════════════════════════════════════════════════════════════╝

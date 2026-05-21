@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Test Login Button</title>
+    <style>
+        body {
+            font-family: monospace;
+            background: #0d1117;
+            color: #c9d1d9;
+            padding: 20px;
+        }
+
+        .test {
+            background: #161b22;
+            border: 1px solid #30363d;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 6px;
+        }
+
+        button {
+            background: #238636;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        button:hover {
+            background: #2ea043;
+        }
+
+        pre {
+            background: #0d1117;
+            padding: 10px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🧪 Login Button Test</h1>
+
+    <div class="test">
+        <h3>Test 1: Check Console Logs</h3>
+        <p>Open your app at http://localhost:3000</p>
+        <p>Open DevTools (F12) → Console</p>
+        <p>Click "Login for Dashboard" button</p>
+        <p>You should see:</p>
+        <pre>🖱️ Login button clicked, setting showDashboard to true
+🔍 App render - isAuthenticated: false showDashboard: true
+🔐 Rendering Login Page</pre>
+    </div>
+
+    <div class="test">
+        <h3>Test 2: Check What You See</h3>
+        <p>After clicking "Login for Dashboard":</p>
+        <p>✅ Should see: <strong>Login Page</strong> (with GitHub button)</p>
+        <p>❌ Should NOT see: Classic View (with repository input)</p>
+    </div>
+
+    <div class="test">
+        <h3>Test 3: Manual State Check</h3>
+        <button onclick="checkState()">Check App State</button>
+        <pre id="output"></pre>
+    </div>
+
+    <div class="test">
+        <h3>Test 4: Force Login Page</h3>
+        <p>If button doesn't work, manually trigger:</p>
+        <button onclick="forceLogin()">Force Show Login Page</button>
+    </div>
+
+    <div class="test">
+        <h3>Common Issues</h3>
+        <ul>
+            <li><strong>Button doesn't respond:</strong> Check console for JavaScript errors</li>
+            <li><strong>Shows classic view after click:</strong> State not updating</li>
+            <li><strong>Page refreshes:</strong> Form submission instead of button click</li>
+        </ul>
+    </div>
+
+    <script>
+        function checkState() {
+            const output = document.getElementById('output');
+            output.textContent = 'Open console on localhost:3000 and run:\n\n' +
+                'console.log(\'showDashboard state:\', /* check React DevTools */);\n' +
+                'console.log(\'isAuthenticated:\', JSON.parse(localStorage.getItem(\'auth-storage\'))?.state?.isAuthenticated);';
+        }
+
+        function forceLogin() {
+            alert('Go to localhost:3000 and paste in console:\n\n' +
+                '// This will force show login page\n' +
+                'window.location.href = \'/?showLogin=true\';');
+        }
+    </script>
+</body>
+
+</html>

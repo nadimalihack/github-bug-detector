@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Test OAuth Callback</title>
+</head>
+
+<body>
+    <h1>Testing OAuth Callback</h1>
+    <div id="output"></div>
+
+    <script>
+        const output = document.getElementById('output');
+
+        // Get code from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const code = urlParams.get('code');
+
+        output.innerHTML += `<p>OAuth Code: ${code ? code.substring(0, 20) + '...' : 'Not found'}</p>`;
+
+        // Check localStorage
+        const authStorage = localStorage.getItem('auth-storage');
+        output.innerHTML += `<p>Auth Storage: ${authStorage ? 'Found' : 'Not found'}</p>`;
+
+        if (authStorage) {
+            const parsed = JSON.parse(authStorage);
+            output.innerHTML += `<pre>${JSON.stringify(parsed, null, 2)}</pre>`;
+        }
+
+        // Test the callback
+        if (code) {
+            output.innerHTML += `<p>Testing callback...</p>`;
+
+            fetch(`http://localhost:8000/auth/callback?code=${code}`, {
+                method: 'POST'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    output.innerHTML += `<p>✅ Callback successful!</p>`;
+                    output.innerHTML += `<pre>${JSON.stringify(data, null, 2)}</pre>`;
+
+                    // Manually update localStorage
+                    const authData = {
+                        state: {
+                            user: data.user,
+                            token: data.token,
+                            githubToken: data.github_token,
+                            isAuthenticated: true
+                        },
+                        version: 0
+                    };
+                    localStorage.setItem('auth-storage', JSON.stringify(authData));
+                    output.innerHTML += `<p>✅ Auth saved to localStorage</p>`;
+                    output.innerHTML += `<p><a href="http://localhost:3000">Go to App</a></p>`;
+                })
+                .catch(err => {
+                    output.innerHTML += `<p>❌ Error: ${err.message}</p>`;
+                });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1478 @@
+/* About Page Styles */
+.about-page {
+    min-height: 100vh;
+    background: #0d1117;
+}
+
+/* Hero Section */
+.about-hero {
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
+    text-align: center;
+}
+
+.about-hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-hero h1 {
+    font-size: 3.5rem;
+    color: #c9d1d9;
+    margin-bottom: 1rem;
+}
+
+.about-subtitle {
+    font-size: 1.5rem;
+    color: #58a6ff;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.about-description {
+    font-size: 1.125rem;
+    color: #8b949e;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Mission Section */
+.mission-section {
+    padding: 5rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mission-content {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 3rem;
+}
+
+.mission-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #58a6ff 0%, #79c0ff 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem;
+    color: white;
+}
+
+.mission-content h2 {
+    font-size: 2.5rem;
+    color: #c9d1d9;
+    margin-bottom: 1.5rem;
+}
+
+.mission-content p {
+    font-size: 1.125rem;
+    color: #8b949e;
+    line-height: 1.8;
+}
+
+/* Values Section */
+.values-section {
+    padding: 5rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.values-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #c9d1d9;
+    margin-bottom: 3rem;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.value-card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 2.5rem;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    border-color: #58a6ff;
+    box-shadow: 0 8px 24px rgba(88, 166, 255, 0.2);
+}
+
+.value-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #58a6ff 0%, #79c0ff 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 1.75rem;
+    color: white;
+}
+
+.value-card h3 {
+    color: #c9d1d9;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.value-card p {
+    color: #8b949e;
+    line-height: 1.6;
+}
+
+/* Story Section */
+.story-section {
+    padding: 5rem 2rem;
+    background: #161b22;
+    border-top: 1px solid #30363d;
+    border-bottom: 1px solid #30363d;
+}
+
+.story-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.story-text h2 {
+    font-size: 2.5rem;
+    color: #c9d1d9;
+    margin-bottom: 1.5rem;
+}
+
+.story-text p {
+    font-size: 1.125rem;
+    color: #8b949e;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.story-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.story-stat {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.story-stat h3 {
+    font-size: 2.5rem;
+    color: #58a6ff;
+    margin-bottom: 0.5rem;
+}
+
+.story-stat p {
+    color: #8b949e;
+    font-size: 1rem;
+}
+
+/* Technology Section */
+.tech-section {
+    padding: 5rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.tech-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #c9d1d9;
+    margin-bottom: 3rem;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.tech-card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 2rem;
+    transition: all 0.3s;
+}
+
+.tech-card:hover {
+    transform: translateY(-5px);
+    border-color: #58a6ff;
+    box-shadow: 0 8px 24px rgba(88, 166, 255, 0.2);
+}
+
+.tech-card h3 {
+    color: #c9d1d9;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.tech-card p {
+    color: #8b949e;
+    line-height: 1.6;
+}
+
+/* Features Overview Section */
+.features-overview {
+    padding: 5rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.features-overview h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #c9d1d9;
+    margin-bottom: 1.5rem;
+}
+
+.section-intro {
+    text-align: center;
+    font-size: 1.125rem;
+    color: #8b949e;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    padding: 0 1rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
+.feature-item {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 2rem;
+    transition: all 0.3s;
+    width: 100%;
+    max-width: 400px;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    border-color: #58a6ff;
+    box-shadow: 0 8px 24px rgba(88, 166, 255, 0.2);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.feature-item h3 {
+    color: #c9d1d9;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.feature-item p {
+    color: #8b949e;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Team Section */
+.team-section {
+    padding: 5rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    background: #161b22;
+    border-top: 1px solid #30363d;
+    border-bottom: 1px solid #30363d;
+}
+
+.team-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #c9d1d9;
+    margin-bottom: 1.5rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+    justify-items: center;
+}
+
+.team-member {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s;
+    width: 100%;
+    max-width: 350px;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    border-color: #58a6ff;
+    box-shadow: 0 8px 24px rgba(88, 166, 255, 0.2);
+}
+
+.member-avatar {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 1.5rem;
+    overflow: hidden;
+    border-radius: 12px; /* square with rounded corners */
+    border: 3px solid #58a6ff;
+    background: #161b22;
+}
+
+.member-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.team-member h3 {
+    color: #c9d1d9;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.member-role {
+    color: #58a6ff;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.member-bio {
+    color: #8b949e;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+/* Tech Stack Section */
+.tech-stack-section {
+    padding: 5rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.tech-stack-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #c9d1d9;
+    margin-bottom: 3rem;
+}
+
+.tech-category {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.tech-category h3 {
+    color: #c9d1d9;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.tech-tag {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    color: #58a6ff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.tech-tag:hover {
+    background: #58a6ff;
+    color: #0d1117;
+    transform: translateY(-2px);
+}
+
+/* ML Section */
+.ml-section {
+    padding: 5rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    background: #161b22;
+    border-top: 1px solid #30363d;
+    border-bottom: 1px solid #30363d;
+}
+
+.ml-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #c9d1d9;
+    margin-bottom: 3rem;
+}
+
+.ml-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.ml-description {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.ml-description h3 {
+    color: #58a6ff;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.ml-description h4 {
+    color: #c9d1d9;
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.ml-description p {
+    color: #8b949e;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.ml-description ul {
+    color: #8b949e;
+    line-height: 1.8;
+    padding-left: 1.5rem;
+}
+
+.ml-description li {
+    margin-bottom: 0.5rem;
+}
+
+.ml-description strong {
+    color: #c9d1d9;
+}
+
+.ml-workflow {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.ml-workflow h3 {
+    color: #58a6ff;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.workflow-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.workflow-step {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    transition: all 0.3s;
+}
+
+.workflow-step:hover {
+    border-color: #58a6ff;
+    transform: translateX(5px);
+}
+
+.step-number {
+    background: linear-gradient(135deg, #58a6ff 0%, #79c0ff 100%);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.workflow-step h4 {
+    color: #c9d1d9;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.workflow-step p {
+    color: #8b949e;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Gemini AI Section */
+.gemini-section {
+    padding: 5rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.gemini-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #c9d1d9;
+    margin-bottom: 2rem;
+}
+
+.gemini-intro {
+    text-align: center;
+    font-size: 1.125rem;
+    color: #8b949e;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto 3rem;
+}
+
+.gemini-intro strong {
+    color: #58a6ff;
+}
+
+.gemini-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+    justify-items: center;
+}
+
+.gemini-feature {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 2rem;
+    transition: all 0.3s;
+    width: 100%;
+    max-width: 400px;
+}
+
+.gemini-feature:hover {
+    transform: translateY(-5px);
+    border-color: #58a6ff;
+    box-shadow: 0 8px 24px rgba(88, 166, 255, 0.2);
+}
+
+.gemini-feature h3 {
+    color: #c9d1d9;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.gemini-feature p {
+    color: #8b949e;
+    line-height: 1.6;
+}
+
+.gemini-capabilities {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.gemini-capabilities h3 {
+    color: #58a6ff;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.capabilities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+}
+
+.capability {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    color: #8b949e;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+
+.capability:hover {
+    border-color: #58a6ff;
+    color: #58a6ff;
+    transform: scale(1.05);
+}
+
+/* Architecture Section */
+.architecture-section {
+    padding: 5rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    background: #161b22;
+    border-top: 1px solid #30363d;
+    border-bottom: 1px solid #30363d;
+}
+
+.architecture-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #c9d1d9;
+    margin-bottom: 3rem;
+}
+
+.architecture-diagram {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 2rem;
+    overflow-x: auto;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diagram-code {
+    color: #58a6ff;
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    white-space: pre;
+    margin: 0;
+    text-align: center;
+    display: inline-block;
+}
+
+.architecture-description {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.architecture-description h3 {
+    color: #58a6ff;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.architecture-description ol {
+    color: #8b949e;
+    line-height: 1.8;
+    padding-left: 1.5rem;
+}
+
+.architecture-description li {
+    margin-bottom: 0.75rem;
+}
+
+.architecture-description strong {
+    color: #c9d1d9;
+}
+
+/* Learning Section */
+.learning-section {
+    padding: 5rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.learning-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #c9d1d9;
+    margin-bottom: 2rem;
+}
+
+.learning-intro {
+    text-align: center;
+    font-size: 1.125rem;
+    color: #8b949e;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto 3rem;
+}
+
+.learning-intro strong {
+    color: #58a6ff;
+}
+
+.learning-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+    justify-items: center;
+}
+
+.learning-feature {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 2rem;
+    transition: all 0.3s;
+    width: 100%;
+    max-width: 400px;
+}
+
+.learning-feature:hover {
+    transform: translateY(-5px);
+    border-color: #58a6ff;
+    box-shadow: 0 8px 24px rgba(88, 166, 255, 0.2);
+}
+
+.learning-feature h3 {
+    color: #c9d1d9;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.learning-feature p {
+    color: #8b949e;
+    line-height: 1.6;
+}
+
+.learning-algorithm {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.learning-algorithm h3 {
+    color: #58a6ff;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.learning-algorithm p {
+    color: #8b949e;
+    line-height: 1.8;
+}
+
+.learning-algorithm strong {
+    color: #c9d1d9;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .story-content {
+        gap: 3rem;
+    }
+
+    .ml-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 968px) {
+    .about-hero {
+        padding: 4rem 1.5rem;
+    }
+
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .about-description {
+        font-size: 1rem;
+    }
+
+    .mission-section {
+        padding: 4rem 1.5rem;
+    }
+
+    .mission-content {
+        padding: 2.5rem;
+    }
+
+    .mission-content h2 {
+        font-size: 2rem;
+    }
+
+    .values-section {
+        padding: 4rem 1.5rem;
+    }
+
+    .values-section h2 {
+        font-size: 2rem;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .story-section {
+        padding: 4rem 1.5rem;
+    }
+
+    .story-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .story-text h2 {
+        font-size: 2rem;
+    }
+
+    .tech-section {
+        padding: 4rem 1.5rem;
+    }
+
+    .tech-section h2 {
+        font-size: 2rem;
+    }
+
+    .features-overview,
+    .team-section,
+    .tech-stack-section,
+    .ml-section,
+    .gemini-section,
+    .architecture-section,
+    .learning-section {
+        padding: 4rem 1.5rem;
+    }
+
+    .features-overview h2,
+    .team-section h2,
+    .tech-stack-section h2,
+    .ml-section h2,
+    .gemini-section h2,
+    .architecture-section h2,
+    .learning-section h2 {
+        font-size: 2rem;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .gemini-features {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .learning-features {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .capabilities-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .diagram-code {
+        font-size: 0.7rem;
+    }
+
+    .architecture-diagram {
+        padding: 1.5rem;
+    }
+
+    .tech-category h3 {
+        font-size: 1.25rem;
+    }
+
+    .ml-description h3,
+    .ml-workflow h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .about-hero {
+        padding: 3rem 1rem;
+    }
+
+    .about-hero h1 {
+        font-size: 1.75rem;
+    }
+
+    .about-subtitle {
+        font-size: 1rem;
+    }
+
+    .about-description {
+        font-size: 0.95rem;
+    }
+
+    .mission-section {
+        padding: 3rem 1rem;
+    }
+
+    .mission-content {
+        padding: 1.75rem;
+    }
+
+    .mission-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .mission-content p {
+        font-size: 0.95rem;
+    }
+
+    .values-section {
+        padding: 3rem 1rem;
+    }
+
+    .values-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .value-card {
+        padding: 1.75rem;
+    }
+
+    .value-card h3 {
+        font-size: 1.25rem;
+    }
+
+    .story-section {
+        padding: 3rem 1rem;
+    }
+
+    .story-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .story-text p {
+        font-size: 0.95rem;
+    }
+
+    .story-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .story-stat {
+        padding: 1.25rem;
+    }
+
+    .story-stat h3 {
+        font-size: 1.75rem;
+    }
+
+    .tech-section {
+        padding: 3rem 1rem;
+    }
+
+    .tech-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features-overview,
+    .team-section,
+    .tech-stack-section,
+    .ml-section,
+    .gemini-section,
+    .architecture-section,
+    .learning-section {
+        padding: 3rem 1rem;
+    }
+
+    .features-overview h2,
+    .team-section h2,
+    .tech-stack-section h2,
+    .ml-section h2,
+    .gemini-section h2,
+    .architecture-section h2,
+    .learning-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .section-intro,
+    .gemini-intro,
+    .learning-intro {
+        font-size: 0.95rem;
+    }
+
+    .features-grid,
+    .team-grid,
+    .gemini-features,
+    .learning-features {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .feature-item,
+    .team-member,
+    .gemini-feature,
+    .learning-feature {
+        padding: 1.5rem;
+    }
+
+    .feature-item h3,
+    .team-member h3,
+    .gemini-feature h3,
+    .learning-feature h3 {
+        font-size: 1.125rem;
+    }
+
+    .feature-item p,
+    .member-bio,
+    .gemini-feature p,
+    .learning-feature p {
+        font-size: 0.9rem;
+    }
+
+    .capabilities-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+
+    .capability {
+        padding: 0.6rem 0.75rem;
+        font-size: 0.85rem;
+    }
+
+    .diagram-code {
+        font-size: 0.55rem;
+        line-height: 1.3;
+    }
+
+    .architecture-diagram {
+        padding: 1rem;
+    }
+
+    .architecture-description {
+        padding: 1.5rem;
+    }
+
+    .architecture-description h3 {
+        font-size: 1.25rem;
+    }
+
+    .architecture-description li {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .tech-category {
+        padding: 1.5rem;
+    }
+
+    .tech-category h3 {
+        font-size: 1.125rem;
+        flex-wrap: wrap;
+    }
+
+    .tech-tag {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.75rem;
+    }
+
+    .ml-description,
+    .ml-workflow {
+        padding: 1.5rem;
+    }
+
+    .ml-description h3,
+    .ml-workflow h3 {
+        font-size: 1.25rem;
+    }
+
+    .ml-description h4 {
+        font-size: 1.125rem;
+    }
+
+    .ml-description p,
+    .ml-description li {
+        font-size: 0.9rem;
+    }
+
+    .workflow-step {
+        padding: 1.25rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .step-number {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+
+    .workflow-step h4 {
+        font-size: 1rem;
+    }
+
+    .workflow-step p {
+        font-size: 0.9rem;
+    }
+
+    .gemini-capabilities {
+        padding: 1.5rem;
+    }
+
+    .gemini-capabilities h3 {
+        font-size: 1.25rem;
+    }
+
+    .learning-algorithm {
+        padding: 1.5rem;
+    }
+
+    .learning-algorithm h3 {
+        font-size: 1.25rem;
+    }
+
+    .learning-algorithm p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero {
+        padding: 2.5rem 0.75rem;
+    }
+
+    .about-hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .about-description {
+        font-size: 0.875rem;
+    }
+
+    .mission-section {
+        padding: 2.5rem 0.75rem;
+    }
+
+    .mission-content {
+        padding: 1.25rem;
+    }
+
+    .mission-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .mission-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .mission-content h2 {
+        font-size: 1.25rem;
+    }
+
+    .mission-content p {
+        font-size: 0.875rem;
+    }
+
+    .values-section {
+        padding: 2.5rem 0.75rem;
+    }
+
+    .values-section h2 {
+        font-size: 1.25rem;
+    }
+
+    .value-card {
+        padding: 1.5rem;
+    }
+
+    .value-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
+    .value-card h3 {
+        font-size: 1.125rem;
+    }
+
+    .value-card p {
+        font-size: 0.875rem;
+    }
+
+    .story-section {
+        padding: 2.5rem 0.75rem;
+    }
+
+    .story-text h2 {
+        font-size: 1.25rem;
+    }
+
+    .story-text p {
+        font-size: 0.875rem;
+    }
+
+    .story-stat {
+        padding: 1rem;
+    }
+
+    .story-stat h3 {
+        font-size: 1.5rem;
+    }
+
+    .story-stat p {
+        font-size: 0.875rem;
+    }
+
+    .tech-section {
+        padding: 2.5rem 0.75rem;
+    }
+
+    .tech-card {
+        padding: 1.25rem;
+    }
+
+    .tech-card h3 {
+        font-size: 1.125rem;
+    }
+
+    .tech-card p {
+        font-size: 0.875rem;
+    }
+
+    .features-overview,
+    .team-section,
+    .tech-stack-section,
+    .ml-section,
+    .gemini-section,
+    .architecture-section,
+    .learning-section {
+        padding: 2.5rem 0.75rem;
+    }
+
+    .features-overview h2,
+    .team-section h2,
+    .tech-stack-section h2,
+    .ml-section h2,
+    .gemini-section h2,
+    .architecture-section h2,
+    .learning-section h2 {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .section-intro,
+    .gemini-intro,
+    .learning-intro {
+        font-size: 0.875rem;
+        margin-bottom: 2rem;
+    }
+
+    .feature-item,
+    .team-member,
+    .tech-category,
+    .ml-description,
+    .ml-workflow,
+    .gemini-feature,
+    .learning-feature,
+    .gemini-capabilities,
+    .learning-algorithm {
+        padding: 1.25rem;
+    }
+
+    .feature-icon {
+        font-size: 2rem;
+    }
+
+    .feature-item h3,
+    .team-member h3,
+    .gemini-feature h3,
+    .learning-feature h3 {
+        font-size: 1rem;
+    }
+
+    .feature-item p,
+    .member-bio,
+    .gemini-feature p,
+    .learning-feature p {
+        font-size: 0.85rem;
+    }
+
+    .member-avatar {
+        width: 70px;
+        height: 70px;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .member-role {
+        font-size: 0.875rem;
+    }
+
+    .tech-category h3 {
+        font-size: 1rem;
+        gap: 0.5rem;
+    }
+
+    .tech-tag {
+        font-size: 0.8rem;
+        padding: 0.35rem 0.6rem;
+    }
+
+    .ml-description h3,
+    .ml-workflow h3,
+    .gemini-capabilities h3,
+    .learning-algorithm h3 {
+        font-size: 1.125rem;
+    }
+
+    .ml-description h4 {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    .ml-description p,
+    .ml-description li,
+    .learning-algorithm p {
+        font-size: 0.85rem;
+    }
+
+    .workflow-step {
+        padding: 1rem;
+    }
+
+    .step-number {
+        width: 30px;
+        height: 30px;
+        font-size: 0.85rem;
+    }
+
+    .workflow-step h4 {
+        font-size: 0.95rem;
+    }
+
+    .workflow-step p {
+        font-size: 0.85rem;
+    }
+
+    .capabilities-grid {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .capability {
+        padding: 0.5rem 0.6rem;
+        font-size: 0.8rem;
+    }
+
+    .diagram-code {
+        font-size: 0.45rem;
+        line-height: 1.2;
+    }
+
+    .architecture-diagram {
+        padding: 0.75rem;
+    }
+
+    .architecture-description {
+        padding: 1.25rem;
+    }
+
+    .architecture-description h3 {
+        font-size: 1.125rem;
+    }
+
+    .architecture-description li {
+        font-size: 0.85rem;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+    .about-hero h1 {
+        font-size: 1.35rem;
+    }
+
+    .about-subtitle {
+        font-size: 0.875rem;
+    }
+
+    .about-description {
+        font-size: 0.8rem;
+    }
+
+    .diagram-code {
+        font-size: 0.4rem;
+    }
+
+    .story-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-tags {
+        gap: 0.5rem;
+    }
+
+    .tech-tag {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.5rem;
+    }
+}

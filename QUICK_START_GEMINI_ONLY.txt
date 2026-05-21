@@ -1,0 +1,77 @@
+========================================
+GEMINI-ONLY MODE - QUICK START
+========================================
+
+✅ SETUP COMPLETE!
+
+What Changed:
+• Backend: No fallback, only real Gemini AI
+• Frontend: Shows "Powered by Gemini 2.5 Flash"
+• API Key: Working with Gemini 2.5 Flash
+• Error Handling: Clear messages when Gemini fails
+
+========================================
+START THE APPLICATION
+========================================
+
+Quick Start (Recommended):
+> restart-with-gemini-only.bat
+
+Manual Start:
+1. cd backend
+2. python -m uvicorn src.api:app --reload
+3. (New terminal) cd frontend
+4. npm run dev
+5. Open: http://localhost:5173
+
+========================================
+TEST GEMINI API
+========================================
+
+> python backend/test_gemini_api.py
+
+Expected: ✅ Gemini Response: Hello, Gemini is working!
+
+========================================
+WHAT YOU'LL SEE
+========================================
+
+With Working Gemini:
+• Badge: "⚡ Powered by Gemini 2.5 Flash"
+• AI Solutions: Real Gemini recommendations
+• Analysis: 400+ word detailed AI summary
+• No fallback content
+
+Without Gemini:
+• Error message with troubleshooting steps
+• No misleading content
+• Clear instructions to fix
+
+========================================
+TROUBLESHOOTING
+========================================
+
+Quota Exceeded:
+• Wait 1 hour for reset
+• Get new key: https://makersuite.google.com/app/apikey
+• Update backend/.env
+• Restart backend
+
+Still Seeing Old Content:
+• Hard refresh: Ctrl + Shift + R
+• Clear browser cache
+• Restart servers
+
+========================================
+FREE TIER LIMITS
+========================================
+
+• 15 requests per minute
+• 1,500 requests per day
+• ~1,500 repositories per day
+
+========================================
+READY TO USE!
+========================================
+
+Run: restart-with-gemini-only.bat

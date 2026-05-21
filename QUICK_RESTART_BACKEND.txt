@@ -1,0 +1,37 @@
+========================================
+RESTART BACKEND SERVER NOW
+========================================
+
+The fix is applied but your backend server is still running the OLD code.
+
+OPTION 1: Use the restart script
+---------------------------------
+Double-click: restart-backend.bat
+
+
+OPTION 2: Manual restart
+---------------------------------
+1. Find the terminal/window running your backend
+2. Press Ctrl+C to stop it
+3. Run this command:
+   cd backend
+   python -m uvicorn src.api:app --reload --host 0.0.0.0 --port 8000
+
+
+OPTION 3: Kill and restart
+---------------------------------
+1. Open Task Manager (Ctrl+Shift+Esc)
+2. Find "python.exe" processes
+3. End the one running uvicorn
+4. Run: start-backend.bat
+
+
+After restarting:
+---------------------------------
+1. Go to your frontend
+2. Try analyzing a repository
+3. Gemini recommendations should work!
+
+
+The error will persist until you restart!
+========================================

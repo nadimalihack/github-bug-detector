@@ -1,0 +1,53 @@
+========================================
+QUICK START GUIDE
+========================================
+
+BACKEND IS ALREADY RUNNING! ✅
+
+Just start the frontend:
+
+1. Double-click: start-frontend.bat
+   (or run: cd frontend && npm run dev)
+
+2. Open browser: http://localhost:5173
+
+3. Login and analyze a repository!
+
+========================================
+IMPORTANT NOTES
+========================================
+
+❌ DO NOT RUN: python api.py
+❌ DO NOT RUN: python src/api.py
+
+✅ ONLY USE: python -m uvicorn src.api:app --reload
+   (from backend/ directory)
+
+Or just use: start-backend.bat
+
+========================================
+BACKEND STATUS
+========================================
+
+✓ ML model loaded
+✓ MongoDB connected
+✓ Gemini 2.5 Flash enabled
+✓ Running on http://127.0.0.1:8000
+
+========================================
+WHAT YOU'LL GET
+========================================
+
+• Real Gemini AI analysis
+• 400+ word detailed summaries
+• Security recommendations
+• No fallback content
+
+========================================
+READY TO USE!
+========================================
+
+Backend: ✅ Running
+Frontend: ⏳ Start it now!
+
+Run: start-frontend.bat
