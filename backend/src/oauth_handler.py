@@ -15,7 +15,7 @@ class OAuthHandler:
     def __init__(self):
         self.client_id = os.getenv('GITHUB_CLIENT_ID')
         self.client_secret = os.getenv('GITHUB_CLIENT_SECRET')
-        self.redirect_uri = os.getenv('OAUTH_REDIRECT_URI', 'http://localhost:3000/auth/callback')
+        self.redirect_uri = os.getenv('OAUTH_REDIRECT_URI', 'https://github-bug-detector.vercel.app//auth/callback')
         self.jwt_secret = os.getenv('JWT_SECRET_KEY', 'change-this-secret')
         self.jwt_algorithm = os.getenv('JWT_ALGORITHM', 'HS256')
         self.jwt_expiration = int(os.getenv('JWT_EXPIRATION_HOURS', '24'))
