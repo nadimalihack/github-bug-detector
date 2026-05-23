@@ -20,7 +20,7 @@
         }
     ],
     "env": {
-        "VITE_API_URL": "http://localhost:8000/"
+        "VITE_API_URL": "https://github-bug-detector-api.onrender.com/"
     },
     "buildCommand": "npm run build",
     "outputDirectory": "dist",
